@@ -1,0 +1,19 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'variant-a-jersey'
+    static_configs:
+      - targets: ['localhost:8080']
+    metrics_path: '/metrics'
+
+  - job_name: 'variant-c-spring-mvc'
+    static_configs:
+      - targets: ['localhost:8081']
+    metrics_path: '/actuator/prometheus'
+
+  - job_name: 'variant-d-spring-data-rest'
+    static_configs:
+      - targets: ['localhost:8082']
+    metrics_path: '/actuator/prometheus'

@@ -1,0 +1,5 @@
+# Project exclude paths
+/benchmark-commons/target/
+/variant-a-jersey/target/
+/variant-c-spring-mvc/target/
+/variant-d-spring-data-rest/target/
